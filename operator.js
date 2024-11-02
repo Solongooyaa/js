@@ -110,7 +110,7 @@ let nine = !(4 === "4"); // false
 // }
 
 // let num = 9;
-// if (num % 2 == ) {
+// if (num % 2 == 0) {
 //   console.log("tegsh");
 // } else {
 //   console.log("sondgoi");

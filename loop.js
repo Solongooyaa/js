@@ -23,14 +23,16 @@
 // }
 
 // let v = 0,
-//   n = 0;let count = 1;
+//   n = 0;
+//   let count = 1;
 
 // while (v < 20) {
 //   v++;
 //   console.log(4, v++);
 // }
 
-// // if ( v % 2 == 1)
+//  if ( v % 2 == 0) 
+
 
 // let l = 1,
 //   m = 1,
