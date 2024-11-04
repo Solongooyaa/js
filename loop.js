@@ -31,8 +31,7 @@
 //   console.log(4, v++);
 // }
 
-//  if ( v % 2 == 0) 
-
+//  if ( v % 2 == 0)
 
 // let l = 1,
 //   m = 1,
@@ -42,10 +41,14 @@
 //   k *= l;
 //   console.log(5, k);
 // }
-// let j = 3,
-//   h = 1;
+// 6. Тооны хүрд харуулах програм бич.
+//   3x1=3
+//   3x2=6
+//   3x3=9
+// let j = 2,
+//   h = 2;
 // while (j <= 10) {
-//   let urjver = j * 1;
+//   let urjver = j * 2;
 //   console.log(6, j, "*", h, "=", urjver);
 //   console.log(6, j + "*" + h + "=" + urjver);
 //   j++;
