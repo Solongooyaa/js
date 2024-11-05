@@ -27,7 +27,7 @@
 //   index++;
 // }
 // numbers гэсэн array зарлаад 15ш тоо оруул.
-// let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 //   //   a = 0;
 //   // Дээрх array доторх тоонуудын нийлбэрийг ол.
 //   // for (let i = 0; i < number.length; i++) {
@@ -41,7 +41,7 @@
 // }
 // console.log(a);
 // Дээрх аrray - ийн хамгийн их тоог ол.
-//   b = 0;
+let b = 0;
 // for (let i = 0; i < number.length; i++) {
 //   if (b < number[i]) {
 //     b = number[i];
@@ -60,6 +60,7 @@
 // number.unshift(2);
 // console.log(number);
 // Дээрх аrray - ийн төгсгөлд дурын 1 тоог нэм.
+
 // number.push(23);
 // console.log(number);
 // Дээрх array доторх тоонуудын тэгш болон сондгой тоо тус тус хэд байгааг ол.
