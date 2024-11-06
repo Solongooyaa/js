@@ -25,26 +25,34 @@
 // printBookDetails("Үзэхийн хязгаар", "Өлзийтөгс", "0000");
 
 // 8;
-function calculateArea(width, heigth) {
-  console.log("calculateArea: ", width, heigth);
-}
-calculateArea(20 * 30);
+// function calculateArea(width, heigth) {
+//   console.log("Area: ", width, heigth);
+// }
+// calculateArea(20 * 30);
 
 // 9
-function calculateVolume(width, heigth, depth) {
-  console.log("Volume:", width, heigth, depth);
-}
-calculateVolume(10 * 20 * 30);
+// function calculateVolume(width, heigth, depth) {
+//   console.log("Volume:", width, heigth, depth);
+// }
+// calculateVolume(10 * 20 * 30);
 
-// 10
-function printTicketInfo(eventName, ticketPrice, discount) {
-  console.log(
-    eventName,
-    "УСК-ны тасалбарын үнэ",
-    ticketPrice,
-    "е-с",
-    discount,
-    "хувь хямдарлаа"
-  );
-}
-printTicketInfo("Хүй", 30, 10);
+// // 10
+// function printTicketInfo(eventName, ticketPrice, discount) {
+//   console.log(
+//     eventName,
+//     "УСК-ны тасалбарын үнэ",
+//     ticketPrice,
+//     "е-с",
+//     discount,
+//     "хувь хямдарлаа"
+//   );
+// }
+// printTicketInfo("Хүй", 30, 10);
+
+// Medium
+// 1
+// function findDigitCount(number, digit) {
+//   for(let i = )
+//   console.log(number, digit);
+// }
+// findDigitCount(56859, 5);
