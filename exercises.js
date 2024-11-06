@@ -26,9 +26,13 @@
 
 // 8;
 // function calculateArea(width, heigth) {
-//   console.log("Area: ", width, heigth);
+// const area = calculateArea;
+//   return area;
+
 // }
-// calculateArea(20 * 30);
+// calculateArea(20, 30);
+// const Area = calculateArea(20, 30);
+// console.log(Area)
 
 // 9
 // function calculateVolume(width, heigth, depth) {
@@ -51,28 +55,25 @@
 
 // Medium
 // 1
-// function findDigitCount(number, digit) {
-//   for(let i = )
-//   console.log(number, digit);
-// }
-// findDigitCount(56859, 5);
+function findDigitCount(number, digit) {
+  let a = 0;
 
-// 2
-function number(n) {
-  for (i = 0; i < l; i++) {
-    let i = 0,
-      result = "";
-    while (i < n) {
-      result += "";
-      i++;
-    }
-  }
-  result += "\n";
-  console.log(result);
+  console.log(a);
 }
-number(5);
-// function digit(l) {
-//   result = 1;
+findDigitCount(56859, 5);
 
+//  2
+// function number(n) {
+//   let result;
+//   for (let i = 0; i <= n; i++) {
+//     let k = 0;
+//     while (k < i) {
+//       k++;
+//       result += " " + k;
+//     }
+//     result += "\n";
+//   }
+//   console.log(result);
 // }
-// digit(5);
+
+// number(5);
