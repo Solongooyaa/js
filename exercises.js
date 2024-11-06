@@ -24,9 +24,27 @@
 // }
 // printBookDetails("Үзэхийн хязгаар", "Өлзийтөгс", "0000");
 
-// 8
-// function calculateArea(width, height) {
-//   const area = width, height(20, 30);
-//   console.log(calculateArea, + area);
-// }
-// calculateArea(20, 30)
+// 8;
+function calculateArea(width, heigth) {
+  console.log("calculateArea: ", width, heigth);
+}
+calculateArea(20 * 30);
+
+// 9
+function calculateVolume(width, heigth, depth) {
+  console.log("Volume:", width, heigth, depth);
+}
+calculateVolume(10 * 20 * 30);
+
+// 10
+function printTicketInfo(eventName, ticketPrice, discount) {
+  console.log(
+    eventName,
+    "УСК-ны тасалбарын үнэ",
+    ticketPrice,
+    "е-с",
+    discount,
+    "хувь хямдарлаа"
+  );
+}
+printTicketInfo("Хүй", 30, 10);
