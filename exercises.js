@@ -56,3 +56,23 @@
 //   console.log(number, digit);
 // }
 // findDigitCount(56859, 5);
+
+// 2
+function number(n) {
+  for (i = 0; i < l; i++) {
+    let i = 0,
+      result = "";
+    while (i < n) {
+      result += "";
+      i++;
+    }
+  }
+  result += "\n";
+  console.log(result);
+}
+number(5);
+// function digit(l) {
+//   result = 1;
+
+// }
+// digit(5);
