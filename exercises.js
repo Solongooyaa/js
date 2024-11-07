@@ -56,9 +56,16 @@
 // Medium
 // 1
 function findDigitCount(number, digit) {
-  let a = 0;
+  let filterDigit = "";
+  for (let i = 0; i < number.length; i++) {
+    let filterNumber = 0;
+    if (filterNumber >= digit) {
+      filterDigit += filterNumber;
+      filterNumber++;
+    }
+  }
 
-  console.log(a);
+  console.log(filterDigit);
 }
 findDigitCount(56859, 5);
 
