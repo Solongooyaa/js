@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="addTask()">NEW TASK</button>
+    <div id="tasks"></div>
+    <script>
+      const tasks = [
+        { name: "Shalaa ugaah", status: "todo" },
+        { name: "Hogoo hayh", status: "todo" },
+      ];
+
+      function render() {
+        const output = document.getElementById("tasks");
+        for (let i = 0; i < tasks.length; i++) {
+          output.innerHTML += '<div class="task">' + tasks[i].name + "</div>";
+        }
+      }
+
+      function addTask() {
+        const tasks = prompt("Enter your task");
+        tasks.push({ name: name, status: "todo" });
+      }
+      render();
+    </script>
+  </body>
+</html>
