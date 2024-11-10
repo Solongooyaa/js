@@ -1,3 +1,6 @@
 .tasks {
+  border: 1px solid gray;
+  padding: 10px;
   border-radius: 4px;
+  margin-top: 3px;
 }

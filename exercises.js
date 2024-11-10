@@ -55,19 +55,19 @@
 
 // Medium
 // 1
-function findDigitCount(number, digit) {
-  let filterDigit = "";
-  for (let i = 0; i < number.length; i++) {
-    let filterNumber = 0;
-    if (filterNumber >= digit) {
-      filterDigit += filterNumber;
-      filterNumber++;
-    }
-  }
+// function findDigitCount(number, digit) {
+//   let filterDigit = "";
+//   for (let i = 0; i < number.length; i++) {
+//     let filterNumber = 0;
+//     if (filterNumber >= digit) {
+//       filterDigit += filterNumber;
+//       filterNumber++;
+//     }
+//   }
 
-  console.log(filterDigit);
-}
-findDigitCount(56859, 5);
+//   console.log(filterDigit);
+// }
+// findDigitCount(56859, 5);
 
 //  2
 // function number(n) {
