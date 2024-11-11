@@ -3,32 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>To Do app</title>
   </head>
   <body>
-    <div>Hello</div>
-    <button onclick="sayHello()">Say hello</button>
-    <button onclick="getName()">GET NAME</button>
-    <button onclick="printName()">PRINT NAME</button>
-    <button onclick="deleteName()">DELETE NAME</button>
-    <div id="name-container" style="font-size: large; color: blue"></div>
-    <div id="person" style="font-size: large; color: black"></div>
-    <script>
-      function sayHello() {
-        alert("Hello, World!");
-      }
-      function getName() {
-        const personElement = prompt("person");
-        document.getElementById("person").innerText = "";
-      }
-      function printName() {
-        const nameContainerElement = document.getElementById("name-container");
-        nameContainerElement.innerText = "John Doe";
-      }
-      function deleteName() {
-        const nameContainerElement = document.getElementById("name-container");
-        nameContainerElement.innerText = "";
-      }
-    </script>
+    <h1>Todo List</h1>
+    <button onclick="addTodo()">Add to do</button>
+    <div id="tasks" class="todos"></div>
+    <div class="">
+      <p>Шалаа угаах</p>
+      <button onclick="">Edit</button>
+    </div>
+    <script src="./todo.js"></script>
   </body>
 </html>

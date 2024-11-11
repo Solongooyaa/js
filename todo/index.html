@@ -10,12 +10,16 @@
     <header>
       <h1>To Do List</h1>
     </header>
+    <button onclick="sayHello()">Say hello</button>
+    <button onclick="getName()">GET NAME</button>
+    <button onclick="printName()">PRINT NAME</button>
+    <button onclick="deleteName()">DELETE NAME</button>
 
     <button onclick="addTask()">Add a Task</button>
     <button onclick="deleteTask()">Delete Task</button>
 
     <div id="tasks"></div>
-    <script>
+    <script src="./">
       let tasks = [
         { name: "Хогоо асгах", status: "todo" },
         { name: "Тоосоо арчих", status: "todo" },
@@ -56,6 +60,21 @@
       }
 
       render();
+      function sayHello() {
+        alert("Hello, World!");
+      }
+      function getName() {
+        const personElement = prompt("person");
+        document.getElementById("person").innerText = "";
+      }
+      function printName() {
+        const nameContainerElement = document.getElementById("name-container");
+        nameContainerElement.innerText = "John Doe";
+      }
+      function deleteName() {
+        const nameContainerElement = document.getElementById("name-container");
+        nameContainerElement.innerText = "";
+      }
     </script>
   </body>
 </html>
