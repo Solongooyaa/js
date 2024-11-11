@@ -7,24 +7,54 @@
     <title>todo</title>
   </head>
   <body>
-    <button onclick="addTask()">TASK</button>
+    <header>
+      <h1>To Do List</h1>
+    </header>
+
+    <button onclick="addTask()">Add a Task</button>
+    <button onclick="deleteTask()">Delete Task</button>
+
     <div id="tasks"></div>
     <script>
-      const tasks = [
-        { name: "Hogoo asgah", status: "todo" },
-        { name: "Toosoo archih", status: "todo" },
+      let tasks = [
+        { name: "Хогоо асгах", status: "todo" },
+        { name: "Тоосоо арчих", status: "todo" },
       ];
+
+      function addTask() {
+        const name = prompt("Enter your task");
+        tasks.push({ name: name, status: "todo" });
+        editName(1, "Хичээл хийх");
+        editStatus(1, "Done");
+        deleteTask();
+        render();
+      }
+      function editName(index, name) {
+        let item = tasks[index];
+        item.name = name;
+      }
+      function editStatus(index, status) {
+        let item = tasks[index];
+        item.status = status;
+      }
+      function deleteTask(index) {
+        let arr = [];
+        for (let i = 0; i < tasks.length; i++) {
+          if (i !== index) {
+            arr.push(tasks[i]);
+          }
+        }
+        tasks = arr;
+      }
+
       function render() {
         const output = document.getElementById("tasks");
         output.innerHTML = "";
-        for (let i = 0; i < tasks.length; i++);
-        output.innerHTML += '<div class = "task">' + tasks[i].name + "</div>";
+        for (let i = 0; i < tasks.length; i++) {
+          output.innerHTML += '<div class = "task">' + tasks[i].name + "</div>";
+        }
       }
-      function addTask() {
-        const name = prompt();
-        tasks.push({ name: name, status: "todo" });
-        render();
-      }
+
       render();
     </script>
   </body>

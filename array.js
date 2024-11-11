@@ -26,8 +26,8 @@
 //   ages[index] = ages[index] + 5;
 //   index++;
 // }
-// numbers гэсэн array зарлаад 15ш тоо оруул.
-let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+// // numbers гэсэн array зарлаад 15ш тоо оруул.
+// let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 //   //   a = 0;
 //   // Дээрх array доторх тоонуудын нийлбэрийг ол.
 //   // for (let i = 0; i < number.length; i++) {
@@ -41,7 +41,7 @@ let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 // }
 // console.log(a);
 // Дээрх аrray - ийн хамгийн их тоог ол.
-let b = 0;
+// let b = 0;
 // for (let i = 0; i < number.length; i++) {
 //   if (b < number[i]) {
 //     b = number[i];
@@ -75,3 +75,14 @@ let b = 0;
 // }
 // console.log(a, c);
 // Дээрх олсон утгуудаа хэвлэж харуулаарай.
+
+// const item = [
+//   { name: "Bike", price: 100 },
+//   { name: "TV", price: 200 },
+//   { name: "Album", price: 10 },
+//   { name: "Book", price: 5 },
+//   { name: "Phone", price: 500 },
+//   { name: "Computer", price: 1000 },
+//   { name: "Keyboard", price: 25 },
+// ];
+// const itemNames = item();
