@@ -89,21 +89,3 @@ function addTodo() {
   render();
 }
 element.classList.add("todoItem");
-addOne({
-  name: "Hool hiih",
-  status: "todo",
-});
-addOne({
-  name: "JS sudlah",
-  status: "todo",
-});
-addOne({
-  name: "Hool hiih",
-  status: "todo",
-});
-
-editStatus(1, "DONE");
-
-editName(1, "Hicheel hiih");
-
-deleteOne();
