@@ -91,8 +91,21 @@ function render() {
   }
 }
 function addTodo() {
+  const modal = document.querySelector("#modal");
+  modal.style.display = "block";
+
   const input = prompt("Enter todo name");
   addOne({ name: input, status: "TODO" });
   render();
 }
 element.classList.add("todoItem");
+function saveTodo() {
+  const inputValue = document.getElementById("task-name").value;
+  todos.push({
+    name: inputValue,
+    status: "todo",
+  });
+  const modal = document.querySelector("#modal");
+  modal.style.display = "none";
+  render();
+}

@@ -7,7 +7,8 @@
     <title>To Do app</title>
   </head>
   <body>
-    <button onclick="addTodo()">Add task</button>
+    <button onclick="addTodo()" id="btn-add-task">Add to do</button>
+
     <div class="container">
       <div id="todos" class="todos">
         <h2>To do</h2>
@@ -27,6 +28,14 @@
       <div id="blocked" class="todos">
         <h2>Blocked</h2>
         <div class="tasks"></div>
+      </div>
+    </div>
+
+    <div id="modal" class="modal-open">
+      <div class="modal-content">
+        <h2>Enter task</h2>
+        <input type="text" id="task-name" />
+        <button onclick="saveTodo()">Add task</button>
       </div>
     </div>
     <script src="./todo.js"></script>
