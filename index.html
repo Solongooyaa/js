@@ -7,12 +7,27 @@
     <title>To Do app</title>
   </head>
   <body>
-    <h1>Todo List</h1>
-    <button onclick="addTodo()">Add to do</button>
-    <div id="tasks" class="todos"></div>
-    <div class="">
-      <p>Шалаа угаах</p>
-      <button onclick="">Edit</button>
+    <button onclick="addTodo()">Add task</button>
+    <div class="container">
+      <div id="todos" class="todos">
+        <h2>To do</h2>
+
+        <div class="tasks">
+          <div></div>
+        </div>
+      </div>
+      <div id="inprogress" class="todos">
+        <h2>In progress</h2>
+        <div class="tasks"></div>
+      </div>
+      <div id="done" class="todos">
+        <h2>Done</h2>
+        <div class="tasks"></div>
+      </div>
+      <div id="blocked" class="todos">
+        <h2>Blocked</h2>
+        <div class="tasks"></div>
+      </div>
     </div>
     <script src="./todo.js"></script>
   </body>

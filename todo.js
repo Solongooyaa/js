@@ -55,8 +55,9 @@ function countDone() {
 //    RUNNING APPLICATION
 
 function render() {
-  const todoList = document.querySelector("#tasks");
-  todoList.innerHTML = "";
+  const todoList = document.querySelector("#todos");
+  const taskList = todoList.querySelector("#tasks");
+  taskList.innerHTML = "";
 
   for (let i = 0; i < todos.length; i++) {
     const item = todos[i];
@@ -64,7 +65,7 @@ function render() {
     //  Create name
 
     const element = document.createElement("div");
-    element.classList.add("task-item");
+    element.classList.add("todo-item");
 
     //  Create task name
     const titleEl = document.createElement("p");
@@ -77,10 +78,16 @@ function render() {
       const newName = prompt("Enter new name");
       editName(i, newName);
     };
-
+    // Delete button
+    const deletebtnEl = document.createElement("Delete-button");
+    deletebtnEl.innerText = "Delete";
+    deletebtnEl.onclick = function () {
+      deleteOne(i);
+    };
     element.appendChild(titleEl);
     element.appendChild(btnEl);
-    todoList.appendChild(element);
+    element.appendChild(deletebtnEl);
+    taskList.appendChild(element);
   }
 }
 function addTodo() {
