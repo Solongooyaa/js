@@ -2,26 +2,31 @@ let todos = [];
 let inprogress = [];
 let done = [];
 let blocked = [];
-// todo add
+const input = document.getElementById("task-name");
+const statusB = document.getElementById("task-status");
 
 function addOne(newTodo) {
   todos.push(newTodo);
 }
-// status uurchluh : Func
 
-function editStatus(index, status) {
-  let item = todos[index];
-  item.status = status;
+function editStatus(index) {
+  let newstatus = prompt("Change your status");
+  if (
+    newstatus === "done" ||
+    newstatus === "to-do" ||
+    newstatus === "in-progress" ||
+    newstatus === "blocked"
+  ) {
+    todos[index].status = newstatus;
+    render();
+  }
 }
-
-// ner uurchluh
 
 function editName(index, name) {
   let item = todos[index];
   item.name = name;
   render();
 }
-// todo delete one item
 
 function deleteOne(index) {
   let arr = [];
@@ -48,48 +53,63 @@ function countDone() {
   return count;
 }
 
-//    RUNNING APPLICATION
-
 function render() {
-  for (let i = 0; i < todos.length; i++) {
-    const containerName = `#${todos[i].status}`;
-    const todoList = document.querySelector(containerName);
-    console.log(todoList);
-    const taskList = todoList.querySelector(".tasks");
-    taskList.innerHTML = "";
-    const item = todos[i];
+  const Todo = document.getElementById("todo-tasks");
+  const Inprogress = document.getElementById("in-progress-tasks");
+  const Done = document.getElementById("done-tasks");
+  const Blocked = document.getElementById("blocked-tasks");
 
-    //  Create name
+  Todo.innerHTML = "";
+  Inprogress.innerHTML = "";
+  Done.innerHTML = "";
+  Blocked.innerHTML = "";
+  for (let i = 0; i < todos.length; i++) {
+    const containerName = todos[i].status;
+    console.log(containerName);
+    const todoList = document.getElementById(containerName);
+    console.log(todoList);
+    let taskList = todoList.querySelector(".tasks");
+    const item = todos[i];
 
     const element = document.createElement("div");
     element.classList.add("todo-item");
 
-    //  Create task name
     const titleEl = document.createElement("p");
     titleEl.style.color = "#ffffff";
-    titleEl.innerText = item.name;
+    titleEl.innerText = "name" + ":" + " " + item.name;
 
-    // Create edit button
+    const StatusEl = document.createElement("p");
+    StatusEl.classList.add("Status");
+    StatusEl.innerText = "Status" + ":" + " " + item.status;
+
     const btnEl = document.createElement("Button");
     btnEl.innerText = "Edit";
     btnEl.onclick = function () {
-      const newName = prompt("Enter new name");
-      editName(i, newName);
+      editStatus(i);
     };
-    // Delete button
+
     const deletebtnEl = document.createElement("Button");
     deletebtnEl.innerText = "Delete";
     deletebtnEl.onclick = function () {
       deleteOne(i);
     };
-    const circle = document.createElement("circle");
-    circle.style.color = "#fff";
 
     element.appendChild(titleEl);
+    element.appendChild(StatusEl);
     element.appendChild(btnEl);
     element.appendChild(deletebtnEl);
-    element.appendChild(circle);
+
     taskList.appendChild(element);
+
+    if (item.status === "To do") {
+      Todo.appendChild(element);
+    } else if (item.status === "In progress") {
+      Inprogress.appendChild(element);
+    } else if (item.status === "Done") {
+      Done.appendChild(element);
+    } else if (item.status === "Blocked") {
+      Blocked.appendChild(element);
+    }
   }
 }
 function addTodo() {
@@ -102,13 +122,13 @@ function addTodo() {
 }
 
 function saveTodo() {
-  const inputValue = document.getElementById("task-name").value;
-  const statusValue = document.getElementById("task-status").value;
-  todos.push({
-    name: inputValue,
-    status: statusValue,
-  });
   const modal = document.querySelector("#modal");
   modal.style.display = "none";
-  render();
+  const inputValue = input.value;
+  const statusvalue = statusB.value;
+
+  if (inputValue) {
+    addOne({ name: inputValue, status: statusvalue });
+    render();
+  }
 }

@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://nestcore.sharepoint.com/:i:/s/24MP2A/EXH17A5HPv5ArjqGeq4a4mgBMQFb1bqup46qAbY4dsIUtg?e=Gq7Jeq"
+    />
     <title>To Do app</title>
   </head>
   <body>
@@ -11,48 +21,49 @@
       <button onclick="addTodo()" id="btn-add-task">Add to do</button>
     </div>
     <div class="container">
-      <div id="todos" class="todos">
+      <div id="todo" class="todos">
         <div class="todos-head">
-          <div class="circle"></div>
+          <div class="circle1"></div>
           <h2 class="todo-title">To do</h2>
         </div>
 
-        <div class="tasks"></div>
+        <div id="todo-tasks" class="tasks"></div>
       </div>
       <div id="in-progress" class="todos">
         <div class="todos-head">
-          <div class="circle"></div>
+          <div class="circle2"></div>
           <h2 class="todo-title">In progress</h2>
         </div>
-        <div class="tasks"></div>
+        <div id="in-progress-tasks" class="tasks"></div>
       </div>
       <div id="done" class="todos">
         <div class="todos-head">
-          <div class="circle"></div>
+          <div class="circle3"></div>
           <h2 class="todo-title">Done</h2>
         </div>
-        <div class="tasks"></div>
+        <div id="done-tasks" class="tasks"></div>
       </div>
       <div id="blocked" class="todos">
         <div class="todos-head">
-          <div class="circle"></div>
+          <div class="circle4"></div>
           <h2 class="todo-title">Blocked</h2>
         </div>
-        <div class="tasks"></div>
+        <div id="blocked-tasks" class="tasks"></div>
       </div>
     </div>
 
     <div id="modal" class="modal-open">
       <div class="modal-content">
         <h2>Enter task</h2>
-        <input type="text" id="task-name" />
+        <input type="text" id="task-name" placeholder="Task name..." />
         <select id="task-status">
+          <option value="select-status">Select status</option>
           <option value="todo">ToDo</option>
           <option value="in-progress">In-Progress</option>
           <option value="done">Done</option>
           <option value="blocked">Blocked</option>
         </select>
-        <button onclick="saveTodo()">Add task</button>
+        <button onclick="saveTodo()" class="Submit">Submit</button>
       </div>
     </div>
     <script src="./todo.js"></script>

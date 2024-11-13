@@ -6,6 +6,7 @@ body {
   background-color: rgba(26, 26, 26, 1);
   width: 100%;
 }
+
 .button {
   display: flex;
   justify-content: flex-end;
@@ -17,17 +18,18 @@ button {
   color: rgba(255, 255, 255, 1);
   margin-top: 5px;
   border: none;
-  border-radius: 6px;
+  border-radius: 3px;
   padding: 8px 12px;
   cursor: pointer;
   font-weight: bold;
 }
+
 .container {
   display: flex;
   margin-top: 120px;
 }
 .todos {
-  width: 280px;
+  width: 300px;
   height: 672px;
   color: #ffffff;
   background-color: rgba(16, 16, 16, 1);
@@ -40,20 +42,46 @@ button {
 .todos-head {
   width: 240px;
   height: 40px;
-  margin: 10px 0 0 10px;
+  margin: 15px 0 0 20px;
   display: flex;
   gap: 10px;
 }
-/* .todo-title {
 
-} */
-.circle {
+.circle1 {
   width: 12px;
   height: 12px;
   border-radius: 6px;
-  /* color: aqua; */
-  margin-top: 5px;
-  z-index: 1;
+  background-color: rgba(217, 217, 217, 1);
+  margin-top: 7px;
+}
+.circle2 {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: rgba(163, 163, 0, 1);
+  margin-top: 7px;
+}
+.circle3 {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: rgba(0, 163, 0, 1);
+  margin-top: 7px;
+}
+.circle4 {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: rgba(163, 0, 0, 1);
+  margin-top: 7px;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-evenly;
+}
+div > button {
+  background-color: rgb(36, 144, 50);
+  padding: 5px;
 }
 #modal {
   position: fixed;
@@ -71,8 +99,8 @@ button {
 .modal-content {
   background-color: #1e1e1e;
   margin: 200px auto;
-  width: 30%;
-  display: flex;
+  width: 370px;
+  height: 376px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -82,12 +110,24 @@ button {
 }
 
 .modal-content > input {
+  width: 290px;
   padding: 6px;
-  border-radius: 5px;
+  margin-top: 20px;
+}
+div > h2 {
+  color: rgba(255, 255, 255, 1);
 }
 select {
-  width: 185px;
+  width: 290px;
   height: 30px;
   margin: 10px;
-  border-radius: 5px;
+}
+.Submit {
+  width: 290px;
+  background-color: rgba(0, 163, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  margin: 150px auto;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
 }
