@@ -6,6 +6,12 @@ body {
   background-color: rgba(26, 26, 26, 1);
   width: 100%;
 }
+.button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+  margin-right: 20px;
+}
 button {
   background-color: rgba(0, 163, 0, 1);
   color: rgba(255, 255, 255, 1);
