@@ -11,22 +11,32 @@
 
     <div class="container">
       <div id="todos" class="todos">
-        <h2>To do</h2>
-
-        <div class="tasks">
-          <div></div>
+        <div class="todos-head">
+          <div class="circle"></div>
+          <h2 class="todo-title">To do</h2>
         </div>
+
+        <div class="tasks"></div>
       </div>
-      <div id="inprogress" class="todos">
-        <h2>In progress</h2>
+      <div id="in-progress" class="todos">
+        <div class="todos-head">
+          <div class="circle"></div>
+          <h2 class="todo-title">In progress</h2>
+        </div>
         <div class="tasks"></div>
       </div>
       <div id="done" class="todos">
-        <h2>Done</h2>
+        <div class="todos-head">
+          <div class="circle"></div>
+          <h2 class="todo-title">Done</h2>
+        </div>
         <div class="tasks"></div>
       </div>
       <div id="blocked" class="todos">
-        <h2>Blocked</h2>
+        <div class="todos-head">
+          <div class="circle"></div>
+          <h2 class="todo-title">Blocked</h2>
+        </div>
         <div class="tasks"></div>
       </div>
     </div>
@@ -35,6 +45,12 @@
       <div class="modal-content">
         <h2>Enter task</h2>
         <input type="text" id="task-name" />
+        <select id="task-status">
+          <option value="todo">ToDo</option>
+          <option value="in-progress">In-Progress</option>
+          <option value="done">Done</option>
+          <option value="blocked">Blocked</option>
+        </select>
         <button onclick="saveTodo()">Add task</button>
       </div>
     </div>
