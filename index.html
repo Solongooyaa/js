@@ -10,15 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://nestcore.sharepoint.com/:i:/s/24MP2A/EXH17A5HPv5ArjqGeq4a4mgBMQFb1bqup46qAbY4dsIUtg?e=Gq7Jeq"
-    />
+
     <title>To Do app</title>
   </head>
   <body>
     <div class="button">
-      <button onclick="addTodo()" id="btn-add-task">Add to do</button>
+      <button onclick="addTodo()" id="btn-add-task">Add task</button>
     </div>
     <div class="container">
       <div id="todo" class="todos">
@@ -57,7 +54,7 @@
         <h1>Enter task</h1>
         <input type="text" id="task-name" placeholder="Task name..." />
         <select id="task-status">
-          <!-- <option value="select-status">Select status</option> -->
+          <option value="">Select status</option>
           <option value="todo">ToDo</option>
           <option value="in-progress">In-Progress</option>
           <option value="done">Done</option>

@@ -5,6 +5,7 @@
 body {
   background-color: rgba(26, 26, 26, 1);
   width: 100%;
+  font-style: inter;
 }
 
 .button {
@@ -14,6 +15,8 @@ body {
   margin-right: 20px;
 }
 button {
+  width: 109px;
+  height: 44px;
   background-color: rgba(0, 163, 0, 1);
   color: rgba(255, 255, 255, 1);
   margin-top: 5px;
@@ -26,6 +29,7 @@ button {
 
 .container {
   display: flex;
+  align-items: center;
   margin-top: 120px;
 }
 .todos {
@@ -76,9 +80,24 @@ button {
   margin-top: 7px;
 }
 .todo-item {
+  width: 260px;
+  height: 54px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(26, 26, 26, 1);
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
+/*   */
+.todo-item img {
+  width: 16px;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
 div > button {
   background-color: rgb(36, 144, 50);
   padding: 5px;
@@ -108,26 +127,37 @@ div > button {
   padding: 12px;
   color: rgba(255, 255, 255, 1);
 }
-
-.modal-content > input {
-  width: 290px;
-  padding: 6px;
-  margin-top: 20px;
-}
-div > h2 {
+div > h1 {
   color: rgba(255, 255, 255, 1);
+  size: 24px;
+  margin: 30px 0 0 30px;
 }
+.modal-content > input {
+  background-color: #1e1e1e;
+  width: 290px;
+  height: 43px;
+  padding: 6px;
+  margin: 20px 0 0 35px;
+  border: 1px color #303030;
+  border-radius: 4px;
+  color: rgba(153, 153, 153, 1);
+}
+
 select {
   width: 305px;
-  height: 30px;
-  margin: 10px;
+  height: 48px;
+  background-color: #1e1e1e;
+  margin: 10px 0 0 36px;
+  border: 1px color #303030;
+  border-radius: 4px;
+  color: rgba(153, 153, 153, 1);
 }
-.Submit {
+.submit {
   width: 290px;
   height: 44px;
   background-color: rgba(0, 163, 0, 1);
   color: rgba(255, 255, 255, 1);
-  margin: 150px auto;
+  margin: 80px 0 0 40px;
   border: none;
   cursor: pointer;
   font-weight: bold;

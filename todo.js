@@ -75,28 +75,28 @@ function render() {
     element.classList.add("todo-item");
 
     const titleEl = document.createElement("p");
-    titleEl.style.color = "#ffffff";
-    titleEl.innerText = "name" + ":" + " " + item.name;
+    // titleEl.style.color = "#ffffff";
+    titleEl.innerText = " " + " " + item.name;
 
     const StatusEl = document.createElement("p");
     StatusEl.classList.add("Status");
-    StatusEl.innerText = "Status" + ":" + " " + item.status;
+    StatusEl.innerText = " " + " " + item.status;
 
-    const btnEl = document.createElement("Button");
-    btnEl.innerText = "Edit";
-    btnEl.onclick = function () {
+    const editIcon = document.createElement("img");
+    editIcon.src = "edit.png";
+    editIcon.onclick = function () {
       editStatus(i);
     };
 
-    const deletebtnEl = document.createElement("Button");
-    deletebtnEl.innerText = "Delete";
+    const deletebtnEl = document.createElement("img");
+    deletebtnEl.src = "delete.png";
     deletebtnEl.onclick = function () {
       deleteOne(i);
     };
 
     element.appendChild(titleEl);
     element.appendChild(StatusEl);
-    element.appendChild(btnEl);
+    element.appendChild(editIcon);
     element.appendChild(deletebtnEl);
 
     taskList.appendChild(element);
