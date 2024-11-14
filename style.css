@@ -124,6 +124,7 @@ select {
 }
 .Submit {
   width: 290px;
+  height: 44px;
   background-color: rgba(0, 163, 0, 1);
   color: rgba(255, 255, 255, 1);
   margin: 150px auto;
