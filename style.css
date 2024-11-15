@@ -5,7 +5,7 @@
 body {
   background-color: rgba(26, 26, 26, 1);
   width: 100%;
-  font-style: inter;
+  font-family: "Inter", sans-serif;
 }
 
 .button {
@@ -83,21 +83,31 @@ button {
   width: 260px;
   height: 54px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: rgba(26, 26, 26, 1);
   border-radius: 8px;
   margin-left: 20px;
   margin-bottom: 10px;
 }
-/*   */
+.todo-item p {
+  font-size: 12px;
+}
+.todo-item h5 {
+  font-size: 12px;
+}
 .todo-item img {
   width: 16px;
   height: 16px;
   align-items: center;
   justify-content: center;
 }
-
+.todo-item p::before {
+  content: "";
+  background-image: url("check.png");
+  width: 12px;
+  height: 12px;
+}
 div > button {
   background-color: rgb(36, 144, 50);
   padding: 5px;

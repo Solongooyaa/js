@@ -76,11 +76,15 @@ function render() {
 
     const titleEl = document.createElement("p");
     // titleEl.style.color = "#ffffff";
-    titleEl.innerText = " " + " " + item.name;
+    titleEl.innerText = `<div class = "todo-item">
+    <input type = "chechbox" class= "checkbox" id = "input-${tt}" />
 
-    const StatusEl = document.createElement("p");
+    </div>`;
+    " " + " " + item.name;
+
+    const StatusEl = document.createElement("h5");
     StatusEl.classList.add("Status");
-    StatusEl.innerText = " " + " " + item.status;
+    StatusEl.innerText = "status: " + " " + item.status;
 
     const editIcon = document.createElement("img");
     editIcon.src = "edit.png";
