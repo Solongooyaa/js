@@ -172,3 +172,9 @@ select {
   cursor: pointer;
   font-weight: bold;
 }
+.task-circle {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 10px;
+}

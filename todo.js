@@ -68,20 +68,18 @@ function render() {
     console.log(containerName);
     const todoList = document.getElementById(containerName);
     console.log(todoList);
+
     let taskList = todoList.querySelector(".tasks");
     const item = todos[i];
 
     const element = document.createElement("div");
     element.classList.add("todo-item");
 
+    const a = document.createElement("div");
+    a.classList.add("task-circle");
     const titleEl = document.createElement("p");
     // titleEl.style.color = "#ffffff";
-    titleEl.innerText = `<div class = "todo-item">
-    <input type = "chechbox" class= "checkbox" id = "input-${tt}" />
-
-    </div>`;
-    " " + " " + item.name;
-
+    titleEl.innerText = " " + " " + item.name;
     const StatusEl = document.createElement("h5");
     StatusEl.classList.add("Status");
     StatusEl.innerText = "status: " + " " + item.status;
@@ -97,7 +95,7 @@ function render() {
     deletebtnEl.onclick = function () {
       deleteOne(i);
     };
-
+    element.appendChild(a);
     element.appendChild(titleEl);
     element.appendChild(StatusEl);
     element.appendChild(editIcon);
