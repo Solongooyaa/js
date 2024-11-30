@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 // import "./todo.css";
-// import Todo from "./todo.js";
+import Todo from "./todo.js";
 // import TODO from "./todo.json";
 
 export default function Page() {
