@@ -38,7 +38,7 @@ export default function Todo() {
         </div>
       </div>
       <div id="modal" className="modal-open">
-        <div className="modal-content">
+        <div className="modal-content mt-2">
           <h1>Enter task</h1>
           <input type="text" id="task-name" placeholder="Task name..." />
           <select id="task-status">
